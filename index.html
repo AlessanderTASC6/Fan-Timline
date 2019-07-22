@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js" 
+    integrity="sha256-nd3JLOQlNGixlXNjD4rPEwBNtIXCcsPW7jQW2C8HM/w=" 
+    crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="p5.js"></script>
+    <title>Batman</title>
+    <link rel="stylesheet" type="text/css"
+    href="style.css" />
+</head>
+<!-- <!<img id="myImg" src="https://media0.giphy.com/media/BnK7qt0oUl5zq/source.gif" alt="Snow" style="width:100%;max-width:300px">
+
+<div id="myModal" class="modal">
+
+<span class="close">&times;</span>
+
+<img class="modal-content" id="img01">
+
+<div id="caption"></div> -->
+
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+<body>
+
+        <button onclick="typeWriter()">I am Batman</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+        var i = 0;
+        var txt = 'Bruce Wayne (Batman) is born. Wayne falls through a hole in the ground and discovers what will become the Batcave. His parents are shot by a mugger, leading to Wayne to start a war on crime. Wayne devotes his life to training to become Batman. Later on, a bat crashes through his window, inspiring him to call himself "Batman"';
+        var speed = 70;
+        
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+        }
+</script>
+</div>
+</body>
+</html>
